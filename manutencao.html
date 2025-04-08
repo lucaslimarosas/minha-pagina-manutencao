@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manutenção em Progresso</title>
+    <title>Manutenção em Andamento</title>
     <!-- CSS do Tabler -->
     <link rel="stylesheet" href="assets/css/tabler.min.css">
     <link rel="stylesheet" href="assets/css/tabler-flags.min.css">
@@ -15,42 +15,56 @@
     <link rel="icon" type="image/png" href="assets/css/static/images/celebration-favicon.png">
     
     <style>
-      /* Imagem de fundo */
+      /* Fundo branco para toda a página */
       body {
-        background: url("assets/css/static/images/view.png") no-repeat center center fixed;
-        background-size: cover;
+        background-color: #ffffff;
+        margin: 0;
+        font-family: sans-serif;
       }
-      /* Camada de cor sobre a imagem */
-      .overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-        min-height: 100vh;
+      /* Container central para a página de manutenção */
+      .maintenance-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
       }
+      /* Card de manutenção com fundo branco e borda sutil */
       .maintenance-content {
-        max-width: 500px;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
         border-radius: 8px;
-        padding: 30px;
+        padding: 40px;
+        max-width: 500px;
+        width: 100%;
         text-align: center;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
       }
-      .maintenance-content h1 {
-        color: #333;
+      /* Logo maior */
+      .maintenance-logo img {
+        height: 150px; /* Ajuste esse valor para aumentar ou diminuir o tamanho */
+        margin-bottom: 30px;
+      }
+      /* Estilo para a barra de progresso, se desejado */
+      .progress {
+        height: 6px;
+        margin-bottom: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="overlay">
+    <div class="maintenance-container">
       <div class="maintenance-content">
-        <img src="assets/css/static/images/celebration-suites-logo.png" alt="Logo" height="60" class="mb-3">
+        <!-- Logo maior, similar ao que é usado na tela de login -->
+        <div class="maintenance-logo">
+          <img src="assets/css/static/images/celebration-suites-logo.png" alt="Logo">
+        </div>
         <h1>Estamos em Manutenção</h1>
         <p class="text-muted">
-          No momento, nosso site está fora do ar para ajustes.
-          Em breve, voltaremos com novidades!
+          Nosso site está passando por melhorias e ajustes. Por favor, tente acessar novamente mais tarde.
         </p>
-        <!-- Opcional: Barra de progresso ou animação -->
-        <div class="progress mb-3" style="height: 6px;">
+        <!-- Barra de progresso (opcional) -->
+        <div class="progress mb-3">
           <div class="progress-bar progress-bar-indeterminate"></div>
         </div>
         <div class="text-muted">
