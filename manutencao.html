@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="pt">
   <head>
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/celebration-favicon.png') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/css/static/images/celebration-favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Manutenção em Andamento</title>
-    <!-- Inclua os arquivos CSS do Tabler (certifique-se de que estes arquivos estão no mesmo local do HTML ou ajuste os caminhos) -->
+    <!-- CSS do Tabler (ajuste se necessário) -->
     <link rel="stylesheet" href="assets/css/tabler.min.css">
     <link rel="stylesheet" href="assets/css/tabler-flags.min.css">
     <link rel="stylesheet" href="assets/css/tabler-payments.min.css">
@@ -15,12 +16,14 @@
   <body class="d-flex flex-column">
     <div class="page page-center">
       <div class="container-tight py-4">
-        <!-- Cabeçalho com logotipo -->
+        <!-- Logo -->
         <div class="text-center mb-4">
           <a href="/">
-            <img src="assets/css/static/images/celebration-suites-logo.png" height="36" alt="Logo">
+            <img src="assets/css/static/images/celebration-suites-logo.png" 
+                 alt="Logo" height="100">
           </a>
         </div>
+
         <!-- Card de manutenção -->
         <div class="card">
           <div class="card-body text-center p-5">
@@ -29,7 +32,6 @@
               Nosso aplicativo está passando por manutenção para melhorias.
               Por favor, volte em breve.
             </p>
-
           </div>
         </div>
         <!-- Rodapé -->
